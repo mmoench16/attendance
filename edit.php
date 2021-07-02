@@ -51,7 +51,8 @@
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
     
-    <div class="d-grid gap-1">
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="viewrecords.php" class="btn btn-default">Back to List</a>
       <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
     </div>
 
