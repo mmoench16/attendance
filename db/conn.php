@@ -1,8 +1,16 @@
 <?php 
-  $host = "127.0.0.1";
-  $db = "attendance_db";
-  $user = "root";
-  $pass = "";
+  // Dev Conn
+  // $host = "127.0.0.1";
+  // $db = "attendance_db";
+  // $user = "root";
+  // $pass = "";
+  // $charset = "utf8mb4";
+
+  // Remote DB Conn
+  $host = "sql11.freemysqlhosting.net";
+  $db = "sql11422717";
+  $user = "sql11422717";
+  $pass = "4UC2z7czC3";
   $charset = "utf8mb4";
 
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
