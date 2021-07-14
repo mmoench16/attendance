@@ -1,8 +1,8 @@
 <?php 
   // Load environment variables
-  require "vendor/autoload.php";
-  $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-  $dotenv->load();
+  // require "vendor/autoload.php";
+  // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+  // $dotenv->load();
   // Dev Conn
   // $host = "127.0.0.1";
   // $host = $_ENV['HOST_L'];

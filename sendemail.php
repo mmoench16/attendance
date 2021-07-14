@@ -1,7 +1,7 @@
 <?php 
   require "vendor/autoload.php";
-  $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'config');
-  $dotenv->load();
+  // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'config');
+  // $dotenv->load();
 
   class sendemail{
     public static function sendmail($to, $subject, $content) {
