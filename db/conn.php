@@ -12,10 +12,17 @@
   // $charset = "utf8mb4";
 
   // Remote DB Conn
-  $host = $_ENV['HOST_A'];
-  $db = $_ENV['DB_A'];
-  $user = $_ENV['USER_A'];
-  $pass = $_ENV['PASS_A'];
+  // $host = $_ENV['HOST_A'];
+  // $db = $_ENV['DB_A'];
+  // $user = $_ENV['USER_A'];
+  // $pass = $_ENV['PASS_A'];
+  // $charset = "utf8mb4";
+  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+  $host = $url["host"];
+  $user = $url["user"];
+  $pass = $url["pass"];
+  $db = substr($url["path"], 1);
   $charset = "utf8mb4";
 
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
