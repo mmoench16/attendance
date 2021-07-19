@@ -5,18 +5,12 @@
   // $dotenv->load();
   // Dev Conn
   // $host = "127.0.0.1";
-  // $host = $_ENV['HOST_L'];
   // $db = "attendance_db";
   // $user = "root";
   // $pass = "";
   // $charset = "utf8mb4";
 
   // Remote DB Conn
-  // $host = $_ENV['HOST_A'];
-  // $db = $_ENV['DB_A'];
-  // $user = $_ENV['USER_A'];
-  // $pass = $_ENV['PASS_A'];
-  // $charset = "utf8mb4";
   $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
   $host = $url["host"];
